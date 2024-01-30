@@ -1,0 +1,14 @@
+.mission{
+    display: flex;
+    height: 20vh;
+    justify-content: space-around;
+}
+.content{
+    width: 50%;
+    height: 10vh;
+    margin: auto;
+}
+.text{
+    display: grid;
+    text-align: center;
+}

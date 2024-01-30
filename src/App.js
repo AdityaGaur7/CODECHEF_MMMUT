@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Nav from './components/Nav/Nav'
+import AnimatedCursor from 'react-animated-cursor'
+import Hero from './components/Hero/Hero'
 
+import Mission from './components/Mission/Mission'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <AnimatedCursor
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: "#333",
+          }}
+          color="#fff"
+          innerSize={20}
+          outerSize={80}
+          innerScale={2}
+          outerScale={2}
+          outerAlpha={1}
+          trailingSpeed={15} //8
+          outerStyle={{
+            // border: '3px solid #fff',
+            backgroundColor: "white",
+            mixBlendMode: "exclusion",
+          }}/>
+    <div>
+      <Nav/>
+      <Hero/>
+      <Mission/>
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

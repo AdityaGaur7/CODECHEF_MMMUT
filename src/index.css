@@ -1,4 +1,10 @@
+*{
+  text-decoration: none;
+  list-style: none;
+}
 body {
+  color:black;
+  background: rgba(86, 91, 187, 0.429);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +17,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
