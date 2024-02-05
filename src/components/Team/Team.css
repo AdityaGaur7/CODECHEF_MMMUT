@@ -1,0 +1,94 @@
+/* Team.css */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Add more styles as needed */
+  /* Add these styles to your existing CSS */
+
+.team-1 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .team-1:hover {
+    transform: scale(1.05);
+  }
+  
+  .team-1 .pic {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .team-1 img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 50%; */
+    display: block;
+    transition: .15s ease-in;
+  }
+ 
+  
+  .team-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .team-info h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .team-info span {
+    display: block;
+    margin-bottom: 15px;
+    color: #888;
+    font-size: 0.9em;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social a {
+    margin: 0 8px;
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social a:hover {
+    color: #007bff; /* Change to your preferred hover color */
+  }
+  

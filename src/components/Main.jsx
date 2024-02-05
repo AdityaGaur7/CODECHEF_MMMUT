@@ -4,7 +4,7 @@ import Hero from './Hero/Hero'
 import { BrowserRouter as Router, Routes , Route } from 'react-router-dom'
 import Nav from './Nav/Nav'
 import Contact from './Contact/Contact'
-import Team from './Team/Team'
+import Team from './Team/Team.jsx'
 import Event from './Event/Event'
 import Notfound from './Notfound/Notfound'
 import Foot from './Foot/Foot'
@@ -27,7 +27,7 @@ function Main() {
           trailingSpeed={15} //8
           outerStyle={{
             border: '3px solid #fff',
-            // backgroundColor: "gray",
+            backgroundColor: "white",
             mixBlendMode: "exclusion",
           }}/>
     <div>

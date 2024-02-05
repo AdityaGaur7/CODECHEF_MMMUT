@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
+
 import GLOBE from "vanta/src/vanta.globe"
-function Back() {
+function BACK() {
  useEffect(()=>{
   GLOBE({
     el:"#ok",
@@ -14,7 +15,7 @@ scaleMobile: 1.00,
 color: "#00E8F8",
 color1:"red",
 color2: "#ffff",
-size: .95,
+size: 0.6,
 backgroundColor: "#1d252f"
   })
  },[])
@@ -22,16 +23,13 @@ backgroundColor: "#1d252f"
 
  
   return (
-   <>
+   
     <div>
        <div id="ok">
         
         </div>
     </div>
-   
-
-    </>
   )
 }
 
-export default Back
+export default BACK
