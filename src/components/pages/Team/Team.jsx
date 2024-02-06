@@ -4,6 +4,7 @@ import Team1 from "./Team1/Team1.jsx";
 import Team2 from "./Team2/Team2.jsx";
 import Team3 from "./Team3/Team3.jsx";
 import Team4 from "./Team4/Team4.jsx";
+import FacultyAdvisor from './Faculty/FacultyAdvisor.jsx';
 import { AwesomeButton } from "react-awesome-button";
 function Team() {
   const [selectedTeam, setSelectedTeam] = useState(1);
@@ -14,6 +15,7 @@ function Team() {
 
   return (
     <div>
+     <FacultyAdvisor/>
       <nav>
         <ul>
           <li><button onClick={() => showTeam(1)}>2019-23</button></li>

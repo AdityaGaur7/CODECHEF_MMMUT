@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import Cards from "./Cards";
 function About() {
   return (
     <div>
@@ -23,6 +24,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Cards/>
     </div>
   );
 }
