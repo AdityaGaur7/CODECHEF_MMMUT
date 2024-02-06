@@ -10,8 +10,10 @@ import About from './pages/About/About.jsx'
 import Notfound from './common/Notfound/Notfound.jsx'
 import Foot from './common/Foot/Foot.jsx'
 import Loader from './common/Loader/Loader.jsx'
+// import LoadingBar from 'react-top-loading-bar'
 function Main() {
-  
+  // const [progress,setProgress] = useState(0);
+
     const [showLoader, setShowLoader] = useState(true);
   
     useEffect(() => {
@@ -29,6 +31,7 @@ function Main() {
 
 
     <Router>
+    {/* <LoadingBar color='red' progress='50%' onLoaderFinished={() => setProgress(0)} /> */}
     <div>
     {showLoader && <Loader />}
         <AnimatedCursor

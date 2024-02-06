@@ -5,7 +5,7 @@ import Team2 from "./Team2/Team2.jsx";
 import Team3 from "./Team3/Team3.jsx";
 import Team4 from "./Team4/Team4.jsx";
 import FacultyAdvisor from './Faculty/FacultyAdvisor.jsx';
-import { AwesomeButton } from "react-awesome-button";
+
 function Team() {
   const [selectedTeam, setSelectedTeam] = useState(1);
 
