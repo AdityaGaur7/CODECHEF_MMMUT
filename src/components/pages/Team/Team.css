@@ -36,24 +36,32 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    border: 1px solid black;
   }
   
   .team-1:hover {
     transform: scale(1.05);
+   
   }
   
   .team-1 .pic {
     position: relative;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
+    
   }
   
   .team-1 img {
     width: 100%;
     height: auto;
     /* border-radius: 50%; */
+
     display: block;
     transition: .15s ease-in;
+  }
+  .team-1 img:hover{
+  
+    /* border: 1px solid black; */
   }
  
   
