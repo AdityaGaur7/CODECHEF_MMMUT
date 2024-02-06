@@ -1,6 +1,7 @@
 import React from 'react'
 import Back from './Back'
 import Mission from '../Mission/Mission'
+import Layer from '../Layer/Layer'
 
 function Hero() {
   return (
@@ -13,6 +14,7 @@ function Hero() {
     </div>
     <hr />
     <Mission/>
+    <Layer/>
     </>
   )
 }

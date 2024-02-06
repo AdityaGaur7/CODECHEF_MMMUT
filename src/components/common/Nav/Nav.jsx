@@ -2,7 +2,7 @@ import React from "react";
 import "./nav.css";
 // import "./navbar.js"
 
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 function Nav() {
   return (
     <>
@@ -26,7 +26,7 @@ function Nav() {
                             <Link className="nav__link" to="/">Home</Link>
                         </li>
                         <li className="list-item">
-                            <Link className="nav__link" to="/">About</Link>
+                            <Link className="nav__link" to="/About">About</Link>
                         </li>
                         <li className="list-item">
                             <Link className="nav__link" to="/team">Team</Link>

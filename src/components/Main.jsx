@@ -1,18 +1,36 @@
-import React from 'react'
+import React, { useState ,useEffect } from 'react'
 import AnimatedCursor from 'react-animated-cursor'
-import Hero from './Hero/Hero'
+import Hero from './pages/home/Hero/Hero'
 import { BrowserRouter as Router, Routes , Route } from 'react-router-dom'
-import Nav from './Nav/Nav'
-import Contact from './Contact/Contact'
-import Team from './Team/Team.jsx'
-import Event from './Event/Event'
-import Notfound from './Notfound/Notfound'
-import Foot from './Foot/Foot'
-
+import Nav from './common/Nav/Nav.jsx'
+import Contact from './pages/Contact/Contact'
+import Team from './pages/Team/Team.jsx'
+import Event from './pages/Event/Event'
+import About from './pages/About/About.jsx'
+import Notfound from './common/Notfound/Notfound.jsx'
+import Foot from './common/Foot/Foot.jsx'
+import Loader from './common/Loader/Loader.jsx'
 function Main() {
+  
+    const [showLoader, setShowLoader] = useState(true);
+  
+    useEffect(() => {
+     
+      const timeout = setTimeout(() => {
+        setShowLoader(false);
+      }, 4500);
+  
+      return () => clearTimeout(timeout); 
+    }, []); 
+  
   return (
+
+   
+
+
     <Router>
     <div>
+    {showLoader && <Loader />}
         <AnimatedCursor
           hasBlendMode={true}
           innerStyle={{
@@ -35,6 +53,7 @@ function Main() {
    
       <Routes>
         <Route exact path="/" element={<Hero/>} />
+        <Route exact path="/about" element={<About/>} />
         <Route exact path="/team" element={<Team/>} />
         <Route exact path="/contact" element={<Contact/>} />
         <Route exact path="/event" element={<Event/>} />
