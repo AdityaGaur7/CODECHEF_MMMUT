@@ -64,7 +64,7 @@ function Main() {
         <Route exact path="/team" element={<Team/>} />
         <Route exact path="/contact" element={<Contact/>} />
         <Route exact path="/event" element={<Event/>} />
-        <Route path="*" element={<Notfound/>} />
+        <Route path="*" element={<Hero/>} />
       </Routes>
       <Foot/>    
     </div>

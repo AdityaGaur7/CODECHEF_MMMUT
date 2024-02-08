@@ -3,7 +3,7 @@ import "./Foot.css"
 function Foot() {
   return (
     <div>
-      <>
+      <div>
       <footer class="footer">
         <div class="container row">
             <div class="footer-col">
@@ -46,7 +46,7 @@ function Foot() {
         </div>
     </footer>
       
-      </>
+      </div>
     </div>
   )
 }

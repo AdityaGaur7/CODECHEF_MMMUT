@@ -5,7 +5,7 @@ import "./nav.css";
 import { Link } from 'react-router-dom'
 function Nav() {
   return (
-    <>
+    <div>
 
 <div className="container">
     <header className="site-header">
@@ -45,7 +45,7 @@ function Nav() {
 </div>
     
 
-    </>
+    </div>
   );
 }
 
