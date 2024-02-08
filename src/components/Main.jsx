@@ -25,34 +25,38 @@ function Main() {
       return () => clearTimeout(timeout); 
     }, []); 
   
+    const [darkMode, setDarkMode] = useState(true);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+  };
   return (
 
-   
-
-
     <Router>
-    {/* <LoadingBar color='red' progress='50%' onLoaderFinished={() => setProgress(0)} /> */}
+    <div className={darkMode ? 'dark-theme' : 'light-theme'}>
+   
     <div>
     {showLoader && <Loader />}
-        <AnimatedCursor
-          hasBlendMode={true}
-          innerStyle={{
-            backgroundColor: "#333",
-          }}
-          color="#fff"
-          innerSize={20}
-          outerSize={80}
-          innerScale={2}
-          outerScale={2}
-          outerAlpha={1}
-          trailingSpeed={15} //8
-          outerStyle={{
-            border: '3px solid #fff',
-            backgroundColor: "white",
-            mixBlendMode: "exclusion",
-          }}/>
+    <AnimatedCursor
+  innerSize={10}
+  outerSize={60}
+  innerScale={2}
+  outerScale={3}
+  outerAlpha={0}
+  hasBlendMode={true}
+  innerStyle={{
+    backgroundColor: 'white'
+  }}
+  outerStyle={{
+    border: '3px solid white'
+  }}
+/>
+
     <div>
       <Nav/>
+      <button onClick={toggleTheme} className="theme-toggle-button">
+      {darkMode ? 'Light Theme' : 'Dark Theme'}
+    </button>
    
       <Routes>
         <Route exact path="/" element={<Hero/>} />
@@ -61,15 +65,12 @@ function Main() {
         <Route exact path="/contact" element={<Contact/>} />
         <Route exact path="/event" element={<Event/>} />
         <Route path="*" element={<Notfound/>} />
-     
       </Routes>
-      <Foot/>
-
-    
+      <Foot/>    
     </div>
-      
     </div>
-    </Router>
+  </div>
+  </Router>
   )
 }
 

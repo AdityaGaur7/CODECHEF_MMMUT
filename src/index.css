@@ -3,9 +3,9 @@
   list-style: none;
 }
 body {
-  color:black;
+  color:rgb(249, 247, 247);
  
-    /* background: #505869; */
+    background: #1F232E;
   
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,3 +20,11 @@ code {
     monospace;
 }
 
+.dark-theme{
+  background-color: #1F232E;
+  color: white;
+}
+.light-theme{
+  background: #b9c0cb;
+  color: #000000;
+}
