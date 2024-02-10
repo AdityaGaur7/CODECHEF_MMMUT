@@ -7,43 +7,61 @@ function Nav() {
   return (
     <div>
 
-<div className="container">
-    <header className="site-header">
-        <div className="header__content--flow">
-            <section className="header-content--left">
-                <a href="#" className="brand-logo">
+{/* <div classNameName="container">
+    <header classNameName="site-header">
+        <div classNameName="header__content--flow">
+            <section classNameName="header-content--left">
+                <a href="#" classNameName="brand-logo">
                 < img src="./img/MMMUT LOGO.png" alt="" />
-                    <span className="logo-text"> CDC (Coders & Developers Club)</span>
+                    <span classNameName="logo-text"> CDC (Coders & Developers Club)</span>
                 </a>
-                <button className="nav-toggle">
-                    <span className="toggle--icon"></span>
+                <button classNameName="nav-toggle">
+                    <span classNameName="toggle--icon"></span>
                 </button>
             </section>
-            <section className="header-content--right">
-                <nav className="header-nav" role="navigation">
-                    <ul className="nav__list" aria-expanded="false">
-                        <li className="list-item">
-                            <Link className="nav__link" to="/">Home</Link>
+            <section classNameName="header-content--right">
+                <nav classNameName="header-nav" role="navigation">
+                    <ul classNameName="nav__list" aria-expanded="false">
+                        <li classNameName="list-item">
+                            <Link classNameName="nav__link" to="/">Home</Link>
                         </li>
-                        <li className="list-item">
-                            <Link className="nav__link" to="/About">About</Link>
+                        <li classNameName="list-item">
+                            <Link classNameName="nav__link" to="/About">About</Link>
                         </li>
-                        <li className="list-item">
-                            <Link className="nav__link" to="/team">Team</Link>
+                        <li classNameName="list-item">
+                            <Link classNameName="nav__link" to="/team">Team</Link>
                         </li>
-                        <li className="list-item">
-                            <Link className="nav__link" to="/event">Events</Link>
+                        <li classNameName="list-item">
+                            <Link classNameName="nav__link" to="/event">Events</Link>
                         </li>
-                        <li className="list-item">
-                            <Link className="nav__link" to="/contact">Contact</Link>
+                        <li classNameName="list-item">
+                            <Link classNameName="nav__link" to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </nav>
             </section>
         </div>
     </header>
-</div>
+</div> */}
     
+<div className="nav">
+  <div className="nav-header">
+    <div className="nav-title">
+    CDC (Coders & Developers Club)
+    </div>
+  </div>
+ 
+
+  <div className="nav-links">
+    <ul>
+   <li> <Link to="/">Home</Link></li>
+   <li> <Link to="/About">About</Link></li>
+   <li> <Link to="/team">Team</Link></li>
+   <li> <Link to="/event">Events</Link></li>
+   <li> <Link to="/contact">Contact</Link></li>
+   </ul>
+  </div>
+</div>
 
     </div>
   );

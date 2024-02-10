@@ -28,3 +28,9 @@ code {
   background: #b9c0cb;
   color: #000000;
 }
+.theme-toggle-button{
+right: 10px;
+top: 15px;
+  position: fixed;
+  z-index: 10;
+}

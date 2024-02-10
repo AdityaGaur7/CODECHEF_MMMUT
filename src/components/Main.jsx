@@ -54,7 +54,7 @@ function Main() {
 
     <div>
       <Nav/>
-      <button onClick={toggleTheme} className="theme-toggle-button">
+      <button onClick={toggleTheme} className="theme-toggle-button" >
       {darkMode ? 'Light Theme' : 'Dark Theme'}
     </button>
    
