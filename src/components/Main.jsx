@@ -39,9 +39,9 @@ function Main() {
     {showLoader && <Loader />}
     <AnimatedCursor
   innerSize={10}
-  outerSize={60}
-  innerScale={2}
-  outerScale={3}
+  outerSize={90}
+  innerScale={1}
+  outerScale={2}
   outerAlpha={0}
   hasBlendMode={true}
   innerStyle={{
