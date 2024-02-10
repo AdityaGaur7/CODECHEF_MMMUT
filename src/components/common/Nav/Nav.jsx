@@ -53,14 +53,13 @@ function Nav() {
  
 
   <div className="nav-links">
-    <ul>
-   <li> <Link to="/">Home</Link></li>
-   <li> <Link to="/About">About</Link></li>
-   <li> <Link to="/team">Team</Link></li>
-   <li> <Link to="/event">Events</Link></li>
-   <li> <Link to="/contact">Contact</Link></li>
-   </ul>
-  </div>
+   
+ <Link to="/">Home</Link>
+ <Link to="/About">About</Link>
+ <Link to="/team">Team</Link>
+ <Link to="/event">Events</Link>
+ <Link to="/contact">Contact</Link>
+   </div>
 </div>
 
     </div>

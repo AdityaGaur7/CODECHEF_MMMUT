@@ -1,8 +1,10 @@
 .hero h1{
-    font-size: 400px;
+    font-size: 300px;
     white-space:  nowrap;
-    font-weight: 999;
+    font-weight: 700;
     
+    color: rgb(129, 143, 223);
+    -webkit-text-stroke: 2px black;
   }
   .hero{
     width: 100%;

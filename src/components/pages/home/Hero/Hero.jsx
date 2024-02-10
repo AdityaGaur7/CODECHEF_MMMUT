@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from 'gsap';
-import Mission from '../Mission/Mission';
 import Layer from '../Layer/Layer';
+import Herocard from '../../../assets/Herocard/Herocard';
 import "./Hero.css";
-
+import HeroSection from '../../../assets/HeroSection/HeroSection';
 function Hero() {
   useEffect(() => {
     // Ensure ScrollTrigger is used with GSAP
@@ -19,10 +19,9 @@ function Hero() {
         trigger: ".hero",
         scroller: 'body',
         start: "top 0",
-        end: "top -300vh",
+        end: "top -200",
         scrub: 1,
         pin: true,
-        markers: true,
       },
     });
 
@@ -35,7 +34,9 @@ function Hero() {
         <h1> CODERS AND DEVELOPERS CLUBS</h1>
       </div>
       <hr />
-      <Mission />
+      <Herocard/>
+     <HeroSection/>
+     
       <Layer />
     </div>
   );

@@ -1,0 +1,126 @@
+.main{
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+.main_left{
+    padding-top: 7rem;
+    font-size: 5.688rem;
+    max-width: 50%;
+    color: #fff;
+}
+.home{
+    position: relative;
+}
+.main_right{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_right img{
+    z-index: 2;
+}
+.circle_outer{
+    border: 2px solid #323946;
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-animation: spin 7s linear infinite;
+    -moz-animation: spin 7s linear infinite;
+    animation: spin 7s linear infinite;
+}
+
+@keyframes spin{
+    100%{-webkit-transform: rotate(-360deg);}
+}
+@keyframes spin{
+    100%{-webkit-transform: rotate(-360deg);}
+}
+@keyframes spin{
+    100%{-webkit-transform: rotate(-360deg);}
+}
+
+.circle_inner{
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    background: linear-gradient(262deg, rgba(216, 151, 194, 1) 0%, rgba(116, 184, 195, 1) 100%);
+    position: absolute;
+    /* -webkit-text-stroke:  linear-gradient(262deg, rgba(216, 151, 194, 1) 0%, rgba(116, 184, 195, 1) 100%);; */
+}
+
+.club_text{
+    background: linear-gradient(151deg, rgba(255, 255, 255, 1) 0%, rgba(254, 188, 137, 1) 50%, rgba(149, 140, 255, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.circle_shadow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+.shadow_common{
+    opacity: 61%;
+    filter: blur(30px)
+}
+.left_shadow{
+    display: flex;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50% 50% 50% 0%;
+    background: #2C3A43;
+    justify-content: flex-end;
+}
+.right_shadow{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50% 0% 0% 0%;
+    background: #2C3A43;
+}
+.top_shadow{
+    opacity: 53%;
+    filter: blur(30px);
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50% 0% 50% 50%;
+    background: #2E3547; 
+    top: 0;
+    right: 0;
+}
+
+
+.icon_shadow{
+    z-index: 2;
+    position: absolute;
+    top: 24rem;
+    right: 24rem;
+}
+.icon_shadow1{
+    z-index: 2;
+    position: absolute;
+    top: 28rem;
+    right: 13rem;
+}
+
+.rotation{
+    /* position: absolute; */
+}
+.goal{
+    left: 1rem;
+    position: absolute;
+}
+.rocket{
+    position: absolute;
+    top: 15.5rem;
+    left: 23.5rem;
+}
+.plane{
+    position: absolute;
+    top: 20.5rem;
+}

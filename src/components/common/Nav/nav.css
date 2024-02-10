@@ -15,8 +15,13 @@
     width: 100%;
     background-color: #4d4d4d42;
     position: relative;
+    color: unset;
+    color: white;
     display: flex;
     justify-content: space-between;
+  }
+  .nav-links ul{
+    color: white;
   }
   
   .nav > .nav-header {
@@ -55,15 +60,19 @@
  
   
   .nav > .nav-links > li  {
+    list-style: none;
     text-decoration: none;
     color: #efefef;
     
   }
-  
+  .nav > .nav-links > a{
+    color: rgb(253, 253, 251);
+  }
   .nav > .nav-links > a:hover {
     /* background-color: rgba(238, 207, 207, 0.204); */
     transition: .44s  ease-in-out all;
     color: rgb(5, 247, 227);
+   
   }
   
   .nav > #nav-check {
