@@ -102,20 +102,35 @@
       border-top: 2px solid #eee;
     }
     .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
+    
+      display: flex;
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      background-color: #ff0505;
       height: 0px;
       transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
+    
     }
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+     
+    /* position: fixed;
+    top: 21%;
+    background: black;
+    z-index: 14;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px; */
     }
+
+
+
+
+
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
@@ -123,4 +138,6 @@
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+   
   }
+

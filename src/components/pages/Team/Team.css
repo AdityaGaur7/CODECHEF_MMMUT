@@ -100,3 +100,8 @@ nav {
     color: #007bff; /* Change to your preferred hover color */
   }
   
+  @media (max-width:512px) {
+    button{
+      font-size: 10px;
+    }
+  }

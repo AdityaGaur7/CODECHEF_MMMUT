@@ -28,7 +28,7 @@
     border: 1px solid black;
 }
 .right {
-    height: 90vh;
+  height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,3 +38,19 @@
     color: rgb(41, 40, 40);
 }
 
+
+@media (max-width:512px) {
+    .cont{
+        display: grid;
+    }
+   .right{
+    height: 100%;
+    margin: 3rem;
+    text-align: center;
+    margin: auto;
+   }
+  
+   .left{
+    margin: auto;
+   }
+}
