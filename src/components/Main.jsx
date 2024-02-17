@@ -6,7 +6,6 @@ import Nav from './common/Nav/Nav.jsx';
 import Contact from './pages/Contact/Contact';
 import Team from './pages/Team/Team.jsx';
 import Event from './pages/Event/Event';
-import Toggle from './common/Toggle/Toggle.jsx';
 import About from './pages/About/About.jsx';
 import Notfound from './common/Notfound/Notfound.jsx';
 import Foot from './common/Foot/Foot.jsx';
@@ -49,7 +48,6 @@ function Main() {
           />
           <div>
             <Nav />
-            <Toggle darkMode={darkMode} toggleTheme={toggleTheme} />
             <Routes>
               <Route exact path="/" element={<Hero />} />
               <Route exact path="/about" element={<About />} />
