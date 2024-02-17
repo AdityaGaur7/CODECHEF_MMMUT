@@ -3,6 +3,10 @@
   list-style: none;
  
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   color:rgb(249, 247, 247);
  

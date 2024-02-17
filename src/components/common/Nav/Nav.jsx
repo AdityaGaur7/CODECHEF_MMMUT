@@ -1,67 +1,30 @@
 import React from "react";
-import "./nav.css";
-// import "./navbar.js"
-
 import { Link } from 'react-router-dom'
+import './nav.css'
+import { IoHomeOutline } from "react-icons/io5";
+import { RiTeamLine } from "react-icons/ri";
+import { RiContactsLine } from "react-icons/ri";
+import { FaCode } from "react-icons/fa6";
+import { SiAboutdotme } from "react-icons/si";
+import { MdOutlineEmojiEvents } from "react-icons/md";
 function Nav() {
   return (
-    <div>
-
-{/* <div classNameName="container">
-    <header classNameName="site-header">
-        <div classNameName="header__content--flow">
-            <section classNameName="header-content--left">
-                <a href="#" classNameName="brand-logo">
-                < img src="./img/MMMUT LOGO.png" alt="" />
-                    <span classNameName="logo-text"> CDC (Coders & Developers Club)</span>
-                </a>
-                <button classNameName="nav-toggle">
-                    <span classNameName="toggle--icon"></span>
-                </button>
-            </section>
-            <section classNameName="header-content--right">
-                <nav classNameName="header-nav" role="navigation">
-                    <ul classNameName="nav__list" aria-expanded="false">
-                        <li classNameName="list-item">
-                            <Link classNameName="nav__link" to="/">Home</Link>
-                        </li>
-                        <li classNameName="list-item">
-                            <Link classNameName="nav__link" to="/About">About</Link>
-                        </li>
-                        <li classNameName="list-item">
-                            <Link classNameName="nav__link" to="/team">Team</Link>
-                        </li>
-                        <li classNameName="list-item">
-                            <Link classNameName="nav__link" to="/event">Events</Link>
-                        </li>
-                        <li classNameName="list-item">
-                            <Link classNameName="nav__link" to="/contact">Contact</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
+    <div className="bg-gray-800">
+      <div className="container mx-auto flex items-center justify-between py-4 nav">
+        <div className="flex items-center">
+          <img src="./img/MMMUT LOGO.png" alt="Logo" className="h-8 mr-2" />
+          <span className="text-white text-lg font-bold">CDC (Coders & Developers Club)</span>
         </div>
-    </header>
-</div> */}
-    
-<div className="nav">
-  <div className="nav-header">
-    <div className="nav-title">
-    CDC (Coders & Developers Club)
-    </div>
-  </div>
- 
-
-  <div className="nav-links">
-   
- <Link to="/">Home</Link>
- <Link to="/About">About</Link>
- <Link to="/team">Team</Link>
- <Link to="/event">Events</Link>
- <Link to="/contact">Contact</Link>
-   </div>
-</div>
-
+        <div className="hidden md:flex">
+          <Link to="/" className="text-white mx-2 hover:text-gray-300 hover:underline">Home </Link>
+          <Link to="/About" className="text-white mx-2 hover:text-gray-300 hover:underline">About </Link>
+          <Link to="/team" className="text-white mx-2 hover:text-gray-300 hover:underline">Team </Link>
+          <Link to="/event" className="text-white mx-2 hover:text-gray-300 hover:underline">Event </Link>
+          <Link to="/contact" className="text-white mx-2 hover:text-gray-300 hover:underline">Contact</Link>
+          <Link to="/contest" className="text-white mx-2 hover:text-gray-300 hover:underline">Code</Link>
+          <Link to="/query" className="text-white mx-2 hover:text-gray-300 hover:underline">Query</Link>
+        </div>
+      </div>
     </div>
   );
 }
