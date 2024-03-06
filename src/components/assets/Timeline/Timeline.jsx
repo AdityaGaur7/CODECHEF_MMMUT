@@ -2,10 +2,10 @@ import React from "react";
 import { DiAndroid } from "react-icons/di";
 import { DiCodeigniter } from "react-icons/di";
 import "./Timeline.css";
-import FaQ from "../FaQ/FaQ";
+// import FaQ from "../FaQ/FaQ";
 import TitleCenter from "../TitleCenter/TitleCenter";
 import { TitleCenter4 } from "../TitleCenter/Title";
-import Form from "../Form/Form";
+// import Form from "../Form/Form";
 const Timeline = () => {
   return (
     <div>
@@ -69,7 +69,7 @@ const Timeline = () => {
         </div>
       </div>
    
-      <Form/>
+      {/* <Form/> */}
    
     </div>
   );

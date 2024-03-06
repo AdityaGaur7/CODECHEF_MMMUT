@@ -6,6 +6,7 @@ import Team3 from "./Team3/Team3.jsx";
 import Team4 from "./Team4/Team4.jsx";
 import FacultyAdvisor from './Faculty/FacultyAdvisor.jsx';
 
+
 function Team() {
   const [selectedTeam, setSelectedTeam] = useState(1);
 
@@ -28,9 +29,9 @@ function Team() {
       <div>
         {/* Render the selected team based on the state */}
         {selectedTeam === 1 && <Team1 />}
-        {selectedTeam === 2 && <Team2 />}
-        {selectedTeam === 3 && <Team3 />}
-        {selectedTeam === 4 && <Team4 />}
+        {selectedTeam === 2 && <Team2 /> }
+        {selectedTeam === 3 && <Team3 /> }
+        {selectedTeam === 4 && <Team4 /> }
       </div>
     </div>
   );

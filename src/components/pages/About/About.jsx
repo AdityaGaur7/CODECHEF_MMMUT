@@ -21,7 +21,7 @@ function About() {
         </div>
         <div className="right">
           <div className="imgy">
-            <img src="https://firebasestorage.googleapis.com/v0/b/test1-80c19.appspot.com/o/Codechef_team%2Fassets%2Fbuild.png?alt=media&token=036a6a3a-de7e-4640-a8a2-a23afd73a7a8" alt="" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/test1-80c19.appspot.com/o/Codechef_team%2Fassets%2Fbuild1.png?alt=media&token=a9dad0ce-a781-4433-85fa-df89a65f2c1d" alt="" />
           </div>
         </div>
       </div>

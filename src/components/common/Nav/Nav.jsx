@@ -16,13 +16,13 @@ function Nav() {
           <span className="text-white text-lg font-bold">CDC (Coders & Developers Club)</span>
         </div>
         <div className="hidden md:flex">
-          <Link to="/" className="text-white mx-2 hover:text-gray-300 hover:underline">Home </Link>
-          <Link to="/About" className="text-white mx-2 hover:text-gray-300 hover:underline">About </Link>
-          <Link to="/team" className="text-white mx-2 hover:text-gray-300 hover:underline">Team </Link>
-          <Link to="/event" className="text-white mx-2 hover:text-gray-300 hover:underline">Event </Link>
-          <Link to="/contact" className="text-white mx-2 hover:text-gray-300 hover:underline">Contact</Link>
-          <Link to="/contest" className="text-white mx-2 hover:text-gray-300 hover:underline">Code</Link>
-          <Link to="/query" className="text-white mx-2 hover:text-gray-300 hover:underline">Query</Link>
+          <Link to="/" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Home </Link>
+          <Link to="/About" className="text-white mx-2 hover:text-gray-300 " id='anchor'>About </Link>
+          <Link to="/team" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Team </Link>
+          <Link to="/event" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Event </Link>
+          <Link to="/contact" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Contact</Link>
+          <Link to="/contest" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Code</Link>
+          <Link to="/query" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Query</Link>
         </div>
       </div>
     </div>

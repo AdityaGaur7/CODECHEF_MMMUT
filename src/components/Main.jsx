@@ -34,10 +34,10 @@ function Main() {
         <div>
           {showLoader && <Loader />}
           <AnimatedCursor
-            innerSize={10}
-            outerSize={90}
+            innerSize={8}
+            outerSize={60}
             innerScale={1}
-            outerScale={2}
+            outerScale={1.6}
             outerAlpha={0}
             hasBlendMode={true}
             innerStyle={{

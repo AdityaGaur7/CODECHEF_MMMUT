@@ -1,5 +1,5 @@
 import React from 'react'
-
+import TeamPage from '../Alumni/Alumni.jsx'
 const FacultyAdvisor = () => {
   return (
     <div>
@@ -31,6 +31,9 @@ const FacultyAdvisor = () => {
                                 </div>
                             </div>
                         </div>
+                        <li style={{textAlign:'center'}}><button>Alumni</button></li>
+          <TeamPage/>
+
     </div>
   )
 }

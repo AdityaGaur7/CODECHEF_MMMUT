@@ -3,6 +3,8 @@
     max-width: 90%;
     margin: auto;
     justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
 }
 .main_left{
     padding-top: 7rem;
