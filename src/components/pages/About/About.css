@@ -68,7 +68,7 @@
 }
 .left button{
     cursor: none;
-    color: white;
+    /* color: white; */
     margin: 2rem 0;
 }
 }
