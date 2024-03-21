@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-
 const StackOverflowSearch = () => {
   const [query, setQuery] = useState("");
   const [answers, setAnswers] = useState([]);
@@ -15,6 +14,7 @@ const StackOverflowSearch = () => {
       .get(`https://api.stackexchange.com/2.3/search/advanced?order=desc&sort=relevance&q=${query}&site=stackoverflow`)
       .then((response) => {
         setAnswers(response.data.items);
+        console.warn(response);
       })
       .catch((error) => {
         console.error("Error fetching answers:", error);
@@ -23,6 +23,8 @@ const StackOverflowSearch = () => {
 
   return (
     <div className="container mx-auto h-screen">
+     
+
       <h1 className="text-3xl font-bold mb-4">Search Stack Overflow</h1>
       <form onSubmit={handleSubmit} className="mb-4">
         <input

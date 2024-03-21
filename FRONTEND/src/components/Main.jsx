@@ -11,7 +11,10 @@ import Notfound from './common/Notfound/Notfound.jsx';
 import Foot from './common/Foot/Foot.jsx';
 import Loader from './common/Loader/Loader.jsx';
 import Query from '../components/pages/Contest/Query.jsx'
-import Contest from '../components/pages/Contest/Contest.jsx'
+// import Contest from '../components/pages/Contest/Contest.jsx'
+import CertificateVerifier from './assets/Certificate/Certify.jsx';
+
+import ContestList from './pages/Contest/Clist.jsx';
 function Main() {
   const [showLoader, setShowLoader] = useState(true);
   const [darkMode, setDarkMode] = useState(true);
@@ -55,8 +58,9 @@ function Main() {
               <Route exact path="/team" element={<Team />} />
               <Route exact path="/contact" element={<Contact />} />
               <Route exact path="/event" element={<Event />} />
-              <Route exact path="/contest" element={<Contest />} />
+              <Route exact path="/contest" element={<ContestList />} />
               <Route exact path="/query" element={<Query />} />
+              <Route exact path="/verify" element={<CertificateVerifier />} />
               <Route path="*" element={<Notfound />} />
             </Routes>
             <Foot />
