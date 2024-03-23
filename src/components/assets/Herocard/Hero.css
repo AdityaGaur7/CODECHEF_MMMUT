@@ -10,6 +10,7 @@
     padding-top: 7rem;
     font-size: 5.688rem;
     max-width: 50%;
+    font-family: 'Courier New', Courier, monospace;
     color: #fff;
 }
 .home{
@@ -23,6 +24,8 @@
 }
 .main_right img{
     z-index: 2;
+    width: auto;
+    height: 35rem;
 }
 .circle_outer{
     border: 2px solid #323946;
@@ -58,6 +61,7 @@
     background: linear-gradient(151deg, rgba(255, 255, 255, 1) 0%, rgba(254, 188, 137, 1) 50%, rgba(149, 140, 255, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 .circle_shadow{
     width: 100%;

@@ -18,7 +18,7 @@ const CertificateVerifier = () => {
   };
 
   return (
-    <div className='certi-css' style={{textAlign:'center',margin:'3rem'}}>
+    <div className='certi-css' style={{margin:'3rem',height:'50vh',textAlign:'center'}}>
       <h2>Certificate Verifier</h2>
       <label htmlFor="certificateId">Enter Certificate ID:</label><br />
       <input style={{margin:'1rem'}}

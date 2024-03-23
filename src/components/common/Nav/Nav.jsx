@@ -1,15 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './nav.css'; // Import your CSS file
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [big,setbig]=useState(false);
-
+  
+  useEffect(()=>{
+    if (window.innerWidth < 1170) {
+      setbig(false);
+    }else {
+      setbig(true);
+    }
+   })
+   
   
   const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-
+    
+     if(window.innerWidth < 1170){
+      setIsOpen(!isOpen);
+      // alert('ok')
+    }
   };
 
   return (
@@ -26,29 +37,29 @@ function Navbar() {
         </button>
         <div className={`navbar__menu ${isOpen ? 'active' : ''}`}>
           <Link to="/" className="navbar__link" 
-          // onClick={toggleNavbar}
+          onClick={toggleNavbar}
           >Home</Link>
           <Link to="/about" className="navbar__link" 
-          // onClick={toggleNavbar}
+          onClick={toggleNavbar}
           >About</Link>
           <Link to="/team" className="navbar__link" 
-          // onClick={toggleNavbar}
+          onClick={toggleNavbar}
           >Team</Link>
           <Link to="/event" className="navbar__link" 
-          // onClick={toggleNavbar}
+          onClick={toggleNavbar}
           >Event</Link>
           <Link to="/contact" className="navbar__link" 
-          // onClick={toggleNavbar}
+          onClick={toggleNavbar}
           >Contact</Link>
           <Link to="/contest" className="navbar__link" 
-          // onClick={toggleNavbar}
-          >Code</Link>
+          onClick={toggleNavbar}
+          >Contests</Link>
           <Link to="/query" className="navbar__link" 
-          // onClick={toggleNavbar}
+          onClick={toggleNavbar}
           >Query</Link>
           <Link to="/verify" className="navbar__link" 
-          // onClick={toggleNavbar}
-          >verify</Link>
+          onClick={toggleNavbar}
+          >Verify</Link>
         </div>
       </div>
     </div>

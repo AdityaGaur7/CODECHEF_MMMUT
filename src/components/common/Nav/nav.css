@@ -13,6 +13,9 @@
     margin: 0px;
     font-family: 'segoe ui';
   }
+  .navbar{
+    height: 5rem;
+  }
   
   .nav {
 
@@ -41,9 +44,10 @@
   .navbar__link:hover{
     list-style: none;
     text-decoration: antiquewhite;
-    background: white;
-    color: #1F232E;
-    transition: .55s ease-in-out;
+    /* background: white; */
+    border: 1px solid white;
+    color: #fffffc;
+    transition: .66s ease-in-out;
 
 
     
@@ -56,14 +60,17 @@
       display: flex;
       left: 90%;
       position: fixed;
-      z-index: 22;
+      z-index: 10;
 
     }
+    .navbar__link{
+      /* padding: 1rem; */
+    }
     .navbar__link:hover{
-    background: white;
-    /* padding: 3rem; */
+    background: bottom;
     
-  
+    
+    border:0;
       
     }
     .navbar__menu {

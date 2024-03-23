@@ -22,7 +22,7 @@ const StackOverflowSearch = () => {
   };
 
   return (
-    <div className="container mx-auto h-screen">
+    <div className="container mx-auto h-screen"  style={{padding:'4rem'}}>
      
 
       <h1 className="text-3xl font-bold mb-4">Search Stack Overflow</h1>
@@ -36,7 +36,7 @@ const StackOverflowSearch = () => {
         />
         <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded ml-2">Search</button>
       </form>
-      <div>
+      <div className="query" style={{minHeight:'50vh'}}>
         {answers.map((answer) => (
           <div key={answer.question_id} className="bg-gray-200 p-4 rounded mb-4">
             <a href={answer.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
