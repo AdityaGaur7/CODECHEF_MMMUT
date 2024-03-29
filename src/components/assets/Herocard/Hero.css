@@ -130,3 +130,11 @@
     position: absolute;
     top: 20.5rem;
 }
+@media (max-width:512px) {
+    .club_text{
+        font-size: 56px;
+    }
+    .main_left{
+        font-size: 45px;
+    }
+}

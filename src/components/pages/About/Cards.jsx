@@ -26,7 +26,7 @@ const Cards = () => {
   ];
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 cards">
       <div className="row">
         {workflowsData.map((workflow, index) => (
           <div key={index} className="col-md-3 mb-4">
