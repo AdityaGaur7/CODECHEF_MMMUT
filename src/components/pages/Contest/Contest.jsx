@@ -41,8 +41,8 @@ const Contests = () => {
     <>
  
    
-    
-    <div className="container mx-auto bg-gray-800 text-white p-4 rounded border border-gray-600">
+    <div style={{padding:'4rem'}}> 
+      <div className="container mx-auto bg-gray-800 text-white p-4 rounded border border-gray-600">
       <h1 className="text-3xl font-bold mb-4">Upcoming Contests</h1>
       <div className="flex flex-col-reverse contest">
   {contests.map((contest) => (
@@ -54,6 +54,7 @@ const Contests = () => {
     </div>
   ))}
 </div>
+    </div>
     </div>
     </>
   );

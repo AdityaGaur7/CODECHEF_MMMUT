@@ -1,32 +1,69 @@
-import React from "react";
-import { Link } from 'react-router-dom'
-import './nav.css'
-import { IoHomeOutline } from "react-icons/io5";
-import { RiTeamLine } from "react-icons/ri";
-import { RiContactsLine } from "react-icons/ri";
-import { FaCode } from "react-icons/fa6";
-import { SiAboutdotme } from "react-icons/si";
-import { MdOutlineEmojiEvents } from "react-icons/md";
-function Nav() {
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import './nav.css'; // Import your CSS file
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [big,setbig]=useState(false);
+  
+  useEffect(()=>{
+    if (window.innerWidth < 1170) {
+      setbig(false);
+    }else {
+      setbig(true);
+    }
+   })
+   
+  
+  const toggleNavbar = () => {
+    
+     if(window.innerWidth < 1170){
+      setIsOpen(!isOpen);
+      // alert('ok')
+    }
+  };
+
   return (
-    <div className="bg-gray-800">
-      <div className="container mx-auto flex items-center justify-between py-4 nav">
-        <div className="flex items-center">
-          <img src="./img/MMMUT LOGO.png" alt="Logo" className="h-8 mr-2" />
-          <span className="text-white text-lg font-bold">CDC (Coders & Developers Club)</span>
+    <div className="navbar">
+      <div className="container">
+        <div className="navbar__brand">
+          <img src="./img/MMMUT LOGO.png" alt="Logo" className="navbar__logo" />
+          <span className="navbar__title">CDC (Coders & Developers Club)</span>
         </div>
-        <div className="hidden md:flex">
-          <Link to="/" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Home </Link>
-          <Link to="/About" className="text-white mx-2 hover:text-gray-300 " id='anchor'>About </Link>
-          <Link to="/team" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Team </Link>
-          <Link to="/event" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Event </Link>
-          <Link to="/contact" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Contact</Link>
-          <Link to="/contest" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Code</Link>
-          <Link to="/query" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Query</Link>
+        <button className="navbar__toggle" onClick={toggleNavbar}>
+          {/* <span className="navbar__icon"></span>
+          <span className="navbar__icon"></span>
+          <span className="navbar__icon"></span> */}
+        </button>
+        <div className={`navbar__menu ${isOpen ? 'active' : ''}`}>
+          <Link to="/" className="navbar__link" 
+          onClick={toggleNavbar}
+          >Home</Link>
+          <Link to="/about" className="navbar__link" 
+          onClick={toggleNavbar}
+          >About</Link>
+          <Link to="/team" className="navbar__link" 
+          onClick={toggleNavbar}
+          >Team</Link>
+          <Link to="/event" className="navbar__link" 
+          onClick={toggleNavbar}
+          >Event</Link>
+          <Link to="/contact" className="navbar__link" 
+          onClick={toggleNavbar}
+          >Contact</Link>
+          <Link to="/contest" className="navbar__link" 
+          onClick={toggleNavbar}
+          >Contests</Link>
+          <Link to="/query" className="navbar__link" 
+          onClick={toggleNavbar}
+          >Query</Link>
+          <Link to="/verify" className="navbar__link" 
+          onClick={toggleNavbar}
+          >Verify</Link>
         </div>
       </div>
     </div>
   );
 }
 
-export default Nav;
+export default Navbar;

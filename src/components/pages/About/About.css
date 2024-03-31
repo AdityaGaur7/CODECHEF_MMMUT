@@ -29,6 +29,7 @@
 
 .left button{
     border: 1px solid black;
+    background: aliceblue;
 }
 .right {
   height: 100vh;
@@ -67,7 +68,10 @@
 }
 .left button{
     cursor: none;
-    color: white;
+    /* color: white; */
     margin: 2rem 0;
+}
+.cards{
+    width: min-content;
 }
 }
