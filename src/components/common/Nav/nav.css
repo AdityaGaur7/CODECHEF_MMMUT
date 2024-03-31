@@ -1,10 +1,20 @@
 * {
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+         
   }
-  
+  Link{
+    list-style: none !important ;
+    text-decoration: none !important;
+
+  }
   body {
     margin: 0px;
     font-family: 'segoe ui';
+  }
+  .navbar{
+    height: 5rem;
   }
   
   .nav {
@@ -20,6 +30,75 @@
   svg{
     height: auto;
   }
+  .active{
+    /* display: none !important; */
+    transform: translateX(-70rem);
+    transition: .66s ease-in-out;
+  }
+  .navbar__toggle{
+    display: none;
+  }
+  .navbar__link{
+    padding: 0px 2rem;
+    color: white;
+    /* font-size: 15px; */
+  }
+  .navbar__link:hover{
+    list-style: none;
+    text-decoration: antiquewhite;
+    /* background: white; */
+    border: 1px solid white;
+    color: #fffffc;
+    transition: .66s ease-in-out;
+
+
+    
+  }
+.navbar__menu{
+  display: flex;
+ 
+}
+  @media (max-width:1170px) {
+    .navbar__toggle{
+      display: flex;
+      left: 90%;
+      position: fixed;
+      z-index: 10;
+
+    }
+    .navbar__link{
+      /* padding: 1rem; */
+    }
+    .navbar__link:hover{
+    background: bottom;
+    
+    
+    border:0;
+      
+    }
+    .navbar__menu {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      /* top: 50%; */
+      top: 0%;
+      /* left: 50%; */
+      left: 0%;
+      width: 100%;
+      text-align: center;
+      height: 100vh;
+      background: #1F232E;
+      z-index: 9;
+      justify-content: center;
+      gap: 5rem;
+      font-size: 2rem;
+      line-height: 0.5rem;
+      transition: .66s ease-in-out;
+    }
+    .ok img{
+      display: none;
+    }
+  }
   /* @media (max-width:720px) {
     .navi{
       position: fixed;
@@ -34,3 +113,10 @@
     } */
     
   /* } */
+  @media (min-width:1170px) {
+    .navbar__menu{
+      display: flex;
+    }
+  }
+
+  

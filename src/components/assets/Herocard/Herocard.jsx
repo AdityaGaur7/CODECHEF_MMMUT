@@ -11,10 +11,11 @@ const Herocard = () => {
        <div className="main_left">
          Coders & Developers
          <br />
-         <span className="club_text">Club</span>
+         <span className="club_text" >Club</span>
        </div>
        <div className="main_right">
-         <div className="circle_outer">
+        <img src="img/laptop2.png" alt="" />
+         {/* <div className="circle_outer">
             <span className="rotation">
               <img src="img/icon_rotation1.svg" className="goal" alt="img" />
             </span>
@@ -32,7 +33,7 @@ const Herocard = () => {
            <img src="img/box1.svg" alt="img" />
          </div>
          <div className="circle_inner border-gradient"></div>
-         <img src="img/main_boy.svg" alt="img" />
+         <img src="img/main_boy.svg" alt="img" /> */}
        </div>
        <div className="circle_shadow">
          <span className="left_shadow shadow_common"></span>

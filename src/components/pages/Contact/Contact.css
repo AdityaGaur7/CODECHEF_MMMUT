@@ -148,12 +148,15 @@ form {
     background-size: 100% 100%;
     transform: translateY(-0.15em);
 }
-@media (max-width:512px) {
+@media (max-width:1170px) {
     svg{
            margin: unset;
            height: unset;
     }
     .ok{
-        display:grid;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
