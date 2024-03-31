@@ -136,6 +136,7 @@ form {
     line-height: 2.5rem;
     padding: 0 3rem;
     border: 0;
+    margin-bottom: 50px;
     border-radius: 1rem;
     background-image: linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
     background-size: 300% 100%;

@@ -19,7 +19,7 @@ function Nav() {
           <Link to="/" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Home </Link>
           <Link to="/About" className="text-white mx-2 hover:text-gray-300 " id='anchor'>About </Link>
           <Link to="/team" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Team </Link>
-          <Link to="/event" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Event </Link>
+          <Link to="/event" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Events </Link>
           <Link to="/contact" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Contact</Link>
           <Link to="/contest" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Code</Link>
           <Link to="/query" className="text-white mx-2 hover:text-gray-300 " id='anchor'>Query</Link>
